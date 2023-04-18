@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  padding: 2%;
+}
+body h1 {
+  display: none;
+}
+body header, body nav {
+  background-color: black;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+body header {
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  width: 80%;
+  margin: 0 10% 0 10%;
+}
+body header .logo {
+  display: flex;
+  justify-content: start;
+  height: 110%;
+  width: auto;
+  margin: 3%;
+}
+body header .logo img {
+  width: 100%;
+}
+body header .buscador {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body header .buscador input[type=text] {
+  width: 80%;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+}
+body header .buscador .botones {
+  border: none;
+  width: 20%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+body header .buscador .botones .fa-solid {
+  color: white;
+  font-size: 20px;
+  width: 5%;
+}
+body header .buscador .botones .fa-solid:hover {
+  color: #EE9D23;
+}
+body header .buscador .botones a .fa-solid {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  width: 5%;
+}
+body header .buscador .botones a .fa-solid:hover {
+  color: #EE9D23;
+}
+body nav {
+  display: flex;
+  justify-content: center;
+}
+body nav .boton {
+  color: white;
+  background-color: black;
+  border: none;
+  font-size: 18px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+body nav .boton:hover {
+  color: #EE9D23;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+body main h3 {
+  color: #EE9D23;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  margin: 50px 0 30px 3%;
+  align-self: start;
+}
+body main .juegosBuscados {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  max-height: 78vh;
+  width: 80%;
+  margin: 0 10% 0 10%;
+}
+body main .juegosBuscados .btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+body main .juegosBuscados .btn button {
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+}
+body main .juegosBuscados .btn button i {
+  font-size: 70px;
+}
+body main .juegosBuscados .btn button:hover {
+  color: grey;
+}
+body main .juegosBuscados img {
+  width: 100%;
+  border-radius: 5px;
+}
+body main .ventas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+body main .ventas .imagenesJuegos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  max-width: 95%;
+}
+body main .ventas .imagenesJuegos .juego {
+  width: 25%;
+}
+body main .ventas .imagenesJuegos .juego img {
+  max-height: 40vh;
+  max-width: 90%;
+  border-radius: 5px;
+}
+body main .ventas .imagenesJuegos .juego .precio {
+  max-width: 90%;
+  max-height: 70px;
+  background-color: #c5c5c5;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
+}
+body main .ventas .imagenesJuegos .juego .fa-solid {
+  color: #EE9D23;
+}
+body main .comentarios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2%;
+  height: 50vh;
+}
+body main .comentarios h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: white;
+  margin: 3% 0 3% 0;
+}
+body main .comentarios p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: white;
+}
+body main .comentarios .cliente {
+  margin-top: 1%;
+  width: 30%;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+body main .comentarios .cliente .fotoCliente {
+  width: 100%;
+  border-radius: 10px;
+}
+body main .sobreNosotros {
+  display: flex;
+  justify-content: center;
+  margin: 2% 0%;
+  height: 40vh;
+  width: 100%;
+  background: radial-gradient(ellipse closest-side, #EE9D23, black);
+}
+body main .sobreNosotros p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  align-self: center;
+  padding: 0 10%;
+}
+body main .distri {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body main .distri .marca {
+  width: 20%;
+  height: 80px;
+  margin: 5% 2%;
+}
+body main footer {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  justify-content: space-around;
+  align-items: center;
+}
+body main footer .redesSociales {
+  align-self: center;
+  height: 45vh;
+  margin: auto;
+}
+body main footer .formContactar {
+  border: #EE9D23 solid 3px;
+  border-radius: 10px;
+  padding: 3%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+body main footer .formContactar form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 60vh;
+}
+body main footer .formContactar form label {
+  font-family: "montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+body main footer .formContactar form input {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+  background-color: rgba(217, 217, 217, 0.9843137255);
+  color: black;
+  width: 95%;
+}
+body main footer .formContactar form textarea {
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  padding: 5px;
+  margin-top: 5px;
+  background-color: rgba(217, 217, 217, 0.9843137255);
+  width: 95%;
+}
+body main footer .formContactar button {
+  align-self: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 5px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(217, 217, 217, 0.9843137255);
+  color: black;
+}
+body main footer .formContactar button:hover {
+  background-color: #ee9d23;
+}
+body main footer .redesSociales {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px #EE9D23 solid;
+  border-bottom: 3px #EE9D23 solid;
+  width: 28%;
+}
+body main footer .redesSociales .logoRedes {
+  height: 20vh;
+  margin: 0 10% 0 5%;
+}
+body main footer .redesSociales .redes {
+  display: flex;
+  flex-direction: row;
+}
+body main footer .redesSociales .redes .fa-brands {
+  font-size: 50px;
+  color: rgba(217, 217, 217, 0.9843137255);
+  margin: 10px 5px 20px 15px;
+}
+body main footer .redesSociales .redes .fa-brands:hover {
+  color: #EE9D23;
+}/*# sourceMappingURL=style.css.map */

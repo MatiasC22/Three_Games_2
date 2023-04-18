@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  padding: 2%;
+  background-color: black;
+}
+body .headerForo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #EE9D23;
+  align-items: center;
+}
+body .headerForo h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  align-self: center;
+  font-size: 4em;
+  width: 18%;
+}
+body .headerForo .logo img {
+  height: 20vh;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+body main h3 {
+  color: #EE9D23;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  margin: 50px 0 15px 3%;
+  align-self: start;
+}
+body main .container {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  margin: 2.5%;
+}
+body main .container .peqContainer {
+  border: #EE9D23 2px solid;
+  border-radius: 10px;
+  padding: 3%;
+}
+body main .container .title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4em;
+  color: #EE9D23;
+}
+body main .container .comment {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  color: White;
+}/*# sourceMappingURL=styleForo.css.map */
