@@ -59,7 +59,8 @@ function validarFormulario() {
     }
 
 
-    var emailVal = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    var emailVal =  /^([a-zA-Z0-9._%+-\?!]+)@([a-zA-Z0-9.-]+)\.([a-zA-Z]{2,})$/;
+    /^\w+([.-_+]?\w+)@\w+([.-]?\w+)(\.\w{2,10})+$/;
     if (!emailVal.test(email)) {
         alert("Por favor, introduce una dirección de correo electrónico válida.");
         return false;
